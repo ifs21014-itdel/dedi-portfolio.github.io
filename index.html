@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="head">
+      <nav id="desktop-nav">
+        <a href="#" class="logo"><i class="bx bxs-color"></i> My Portofolio</a>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><i class="bx bxs-moon" id="icon-theme"></i></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Dedi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li>
+            <a href="#certifications" onclick="toggleMenu()">Certifications</a>
+          </li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="home-img">
+        <img src="assets/profile-pic.png" class="one" />
+      </div>
+      <div class="home-text">
+        <h5>Hello,I'm</h5>
+        <h1>Dedi Andre Martua Raja Panggabean</h1>
+        <h3>Institut Teknologi Del</h3>
+        <a href="#about" class="btn">About Me</a>
+        <a href="/assets/daspro.pdf" class="btn" download="">Download CV</a>
+        <div id="socials-container">
+          <div class="row-icon">
+            <img
+              src="./assets/linkedin.png"
+              alt="linkedinprofile"
+              class="icon"
+              onclick="location.href='https:www.linkedin.com/in/dedi-panggabean-569a57272/'"
+            />
+          </div>
+          <div class="row-icon">
+            <img
+              src="./assets/github.png"
+              alt="githubprofile"
+              class="icon"
+              onclick="location.href='https:github.com/settings/profile'"
+            />
+          </div>
+          <div class="row-icon">
+            <img
+              src="./assets/instagram.png"
+              alt="instagramprofile"
+              class="icon"
+              onclick="location.href='https:instagram.com/dediampanggabean?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D'"
+            />
+          </div>
+          <div class="row-icon">
+            <img
+              src="./assets/facebook.png"
+              alt="facebookprofile"
+              class="icon"
+              onclick="location.href='https:www.facebook.com/dedi.andre.56884?locale=id_ID'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Hi, my name is Dedi Andre Martua Raja Panggabean. I was born in
+              Tarutung, February 22 2002. I am now 21 years old. I live in
+              Lumban Aritonang village, Sipoholon District, North Tapanuli
+              Regency. I am the 3rd child of 3 siblings. Now I study as a
+              student at Del Technology Institution. I am a student majoring in
+              informatics. Now I taking my 5th semester.
+            </p>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+                onclick="location.href='https:www.del.ac.id/'"
+              />
+              <h3>Insitut Teknologi Del</h3>
+              <p><br />Informatics Undergraduate Student</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/location.png"
+                alt="Education icon"
+                class="icon"
+                onclick="location.href='https:maps.app.goo.gl/jhxpWxC8KkL4CdeD9'"
+              />
+              <h3>Address</h3>
+              <p>Sipoholon, North Tapanuli Regency, North Sumatra 22543</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+
+      <div class="about-containers">
+        <main class="row">
+          <section class="col">
+            <header>
+              <h2>Technical Skills</h2>
+            </header>
+            <div class="contens">
+              <div class="container-prog">
+                <div class="box-prog">
+                  <p style="font-size: 25px; font-weight: bold">HTML</p>
+                  <div class="progress_bar_box">
+                    <div class="progress_bar">
+                      <span class="line"></span>
+                    </div>
+                    <p class="increasing_percentage">0%</p>
+                    <div class="total_percentage">80%</div>
+                  </div>
+                </div>
+
+                <div class="box-prog">
+                  <p style="font-size: 25px; font-weight: bold">CSS</p>
+                  <div class="progress_bar_box">
+                    <div class="progress_bar">
+                      <span class="line"></span>
+                    </div>
+                    <p class="increasing_percentage">0%</p>
+                    <div class="total_percentage">50%</div>
+                  </div>
+                </div>
+
+                <div class="box-prog">
+                  <p style="font-size: 25px; font-weight: bold">JAVASCRIPT</p>
+                  <div class="progress_bar_box">
+                    <div class="progress_bar">
+                      <span class="line"></span>
+                    </div>
+                    <p class="increasing_percentage">0%</p>
+                    <div class="total_percentage">25%</div>
+                  </div>
+                </div>
+
+                <div class="box-prog">
+                  <p style="font-size: 25px; font-weight: bold">C</p>
+                  <div class="progress_bar_box">
+                    <div class="progress_bar">
+                      <span class="line"></span>
+                    </div>
+                    <p class="increasing_percentage">0%</p>
+                    <div class="total_percentage">40%</div>
+                  </div>
+                </div>
+
+                <div class="box-prog">
+                  <p style="font-size: 25px; font-weight: bold">JAVA</p>
+                  <div class="progress_bar_box">
+                    <div class="progress_bar">
+                      <span class="line"></span>
+                    </div>
+                    <p class="increasing_percentage">0%</p>
+                    <div class="total_percentage">60%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col">
+            <header>
+              <h2>Professional Skills</h2>
+            </header>
+            <div class="contens">
+              <div class="container">
+                <div class="circular-progress">
+                  <span class="progress-value">80%</span>
+                </div>
+                <span class="text">Speaking</span>
+              </div>
+              <div class="container">
+                <div class="circular-progress">
+                  <span class="progress-value">90%</span>
+                </div>
+                <span class="text">Communication</span>
+              </div>
+              <div class="container">
+                <div class="circular-progress">
+                  <span class="progress-value">90%</span>
+                </div>
+                <span class="text">Team Work</span>
+              </div>
+              <div class="container">
+                <div class="circular-progress">
+                  <span class="progress-value">70%</span>
+                </div>
+                <span class="text">Creativity</span>
+              </div>
+              <div class="container">
+                <div class="circular-progress">
+                  <span class="progress-value">80%</span>
+                </div>
+                <span class="text">Project Management</span>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <main class="row">
+            <section class="col">
+              <header>
+                <h2>Education</h2>
+              </header>
+              <div class="contens">
+                <div class="box">
+                  <h3>Institut Teknologi Del</h3>
+                  <h4>2021-present</h4>
+                  <p>
+                    <em> Laguboti, Toba Regency, North Sumatra </em>
+                  </p>
+                  <p>Informatics Study Program</p>
+                </div>
+                <div class="box">
+                  <h3>SMA Negeri 3 Tarutung</h3>
+                  <h4>2017-2020</h4>
+                  <p>
+                    <em> Tarutung, North Tapanuli Regency, North Sumatra </em>
+                  </p>
+                  <p>Math and Science Major</p>
+                </div>
+                <div class="box">
+                  <h3>SMP Swasta Santa Maria Tarutung</h3>
+                  <h4>2014-2017</h4>
+                  <p>
+                    <em> Tarutung, North Tapanuli Regency, North Sumatra </em>
+                  </p>
+                </div>
+                <div class="box">
+                  <h3>SD Swasta Latihan HKBP Pearaja Tarutung</h3>
+                  <h4>2008-2014</h4>
+                  <p>
+                    <em> Tarutung, North Tapanuli Regency, North Sumatra </em>
+                  </p>
+                </div>
+                <div class="box">
+                  <h3>TK Pembina HKBP Tarutung</h3>
+                  <h4>2007-2008</h4>
+                  <p>
+                    <em> Tarutung, North Tapanuli Regency, North Sumatra </em>
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="col">
+              <header>
+                <h2>Organizational</h2>
+              </header>
+              <div class="contens">
+                <div class="box">
+                  <h3>STUDENT CONSULTATIVE ASSEMBLY (MPM) KM IT DEL</h3>
+                  <h4>2023-present</h4>
+                  <p>Chairman</p>
+                  <h4>2022-2023</h4>
+                  <p>Commission B (Finance and Logistic)</p>
+                </div>
+                <div class="box">
+                  <h3>IT Del Fest 2023</h3>
+                  <h4>2023</h4>
+                  <p>Chairman</p>
+                </div>
+                <div class="box">
+                  <h3>GENERAL ELECTION COMMISSIONS(KPU) IT Del 2023</h3>
+                  <h4>2023</h4>
+                  <p>Chairman</p>
+                </div>
+                <div class="box">
+                  <h3>CLASS REPRESENTATIVE ASSEMBLY(MPK)</h3>
+                  <h4>2015-2016</h4>
+                  <p>Chairman</p>
+                  <h4>2014-2015</h4>
+                  <p>Commission B</p>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <main class="row">
+            <section class="col">
+              <header>
+                <h2>Dicoding</h2>
+              </header>
+              <div class="contens">
+                <div class="box">
+                  <h3>
+                    Getting Started with Programming Basics to Become a
+                    Developer Software
+                  </h3>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-1"
+                      onclick="window.open('./assets/daspro.pdf')"
+                    >
+                      Download
+                    </button>
+                    <button
+                      class="btn btn-color-1"
+                      onclick="window.open('./assets/daspro.pdf', '_blank')"
+                    >
+                      Open
+                    </button>
+                  </div>
+                </div>
+                <div class="box">
+                  <h3>Learn Basic Project Management</h3>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-1"
+                      onclick="window.open('./assets/manajemen.pdf')"
+                    >
+                      Download
+                    </button>
+                    <button
+                      class="btn btn-color-1"
+                      onclick="window.open('./assets/manajemen.pdf', '_blank')"
+                    >
+                      Open
+                    </button>
+                  </div>
+                </div>
+                <div class="box">
+                  <h3>Learn Basic Structured Query Language (SQL)</h3>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-1"
+                      onclick="window.open('./assets/sql.pdf')"
+                    >
+                      Download
+                    </button>
+                    <button
+                      class="btn btn-color-1"
+                      onclick="window.open('./assets/.pdf', '_blank')"
+                    >
+                      Open
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container-project">
+        <div class="project-title">
+          <h1 class="title">Projects</h1>
+        </div>
+        <div class="items-links">
+          <span class="item-link menu-active" data-name="all">All</span>
+          <span class="item-link" data-name="website">Websites</span>
+          <span class="item-link" data-name="application">Applications</span>
+          <span class="item-link" data-name="ui/ux">UI/UX</span>
+        </div>
+        <div class="gallery">
+          <div class="project-img" data-name="application">
+            <img src="assets/python.PNG" alt="" />
+            <div class="overlay">
+              <h4>Application Project</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="action-aria">
+                <a href="" class="btn">Live Demo</a>
+                <a href="" class="btn btn-light"> Github </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-img" data-name="application">
+            <img src="assets/catatan_keuangan.PNG" alt="" />
+            <div class="overlay">
+              <h4>Application Project</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+
+              <div class="action-aria">
+                <a href="" class="btn">Live Demo</a>
+                <a href="" class="btn btn-light"> Github </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="application">
+            <img src="assets/sochat.PNG" alt="" />
+            <div class="overlay">
+              <h4>Application Project</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="action-aria">
+                <a href="" class="btn">Live Demo</a>
+                <a href="" class="btn btn-light"> Github </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-img" data-name="ui/ux">
+            <img src="assets/del.png" alt="" />
+            <div class="overlay">
+              <h4>UI/UX Project</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="action-aria">
+                <a href="" class="btn">Live Demo</a>
+                <a href="" class="btn btn-light"> Github </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-img" data-name="ui/ux">
+            <img
+              src="assets/IF 11S2203_UTS_IMK_11S21014_Dedi A M R Panggabean.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h4>UI/UX Project</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="action-aria">
+                <a href="" class="btn">Live Demo</a>
+                <a href="" class="btn btn-light"> Github </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-img" data-name="website">
+            <img src="assets/Web1.PNG" alt="" />
+            <div class="overlay">
+              <h4>Web Project</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="action-aria">
+                <a href="" class="btn">Live Demo</a>
+                <a href="" class="btn btn-light"> Github </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-img" data-name="website">
+            <img src="assets/web2.PNG" alt="" />
+            <div class="overlay">
+              <h4>Web Project</h4>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div class="action-aria">
+                <a href="" class="btn">Live Demo</a>
+                <a href="" class="btn btn-light"> Github </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h1 class="title">Contact Me</h1>
+
+      <div class="container-contact">
+        <div class="contactInfo">
+          <div class="box-contact">
+            <div class="icon-contact">
+              <div class="row-icon">
+                <img
+                  src="./assets/location.png"
+                  alt="linkedinprofile"
+                  class="icon"
+                />
+              </div>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>
+                Lumban Aritonang Village,<br />Sipoholon District,<br />North
+                Tapanuli
+              </p>
+            </div>
+          </div>
+          <div class="box-contact">
+            <div class="icon-contact">
+              <div class="row-icon">
+                <img
+                  src="./assets/email.png"
+                  alt="linkedinprofile"
+                  class="icon"
+                />
+              </div>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>dediandree22@gmail.com</p>
+            </div>
+          </div>
+          <div class="box-contact">
+            <div class="icon-contact">
+              <div class="row-icon">
+                <img
+                  src="./assets/phone.png"
+                  alt="linkedinprofile"
+                  class="icon"
+                />
+              </div>
+            </div>
+            <div class="text">
+              <h3>Phone Number</h3>
+              <p>0813-9646-0403</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form>
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input
+                type="text"
+                name="fullName"
+                required="required"
+                id="fullName"
+              />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="email" name="email" required="required" id="email" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea
+                name="message"
+                required="required"
+                id="message"
+              ></textarea>
+              <span>Type Your Message....</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Dedi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
