@@ -29,7 +29,7 @@ body {
 .dark-theme {
   --background-color: #101113;
   --text-color: #101113;
-  --main-color: #008170;
+  --main-color: rgb(8, 78, 141);
   --other-color: #d7bbf5;
   --background1: #f6f4eb;
   --background2: white;
