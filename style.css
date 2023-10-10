@@ -144,7 +144,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 350px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -444,7 +444,7 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
+.arah {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
