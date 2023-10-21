@@ -127,3 +127,24 @@ var icon = document.getElementById("icon-theme");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
 };
+let filterItemsex = document.querySelectorAll(".item-link"); // Mengambil semua elemen dengan class "item-link"
+let filterImagesec = document.querySelectorAll(".gallery");
+
+window.addEventListener("load", () => {
+  filterItems.forEach((item) => {
+    item.addEventListener("click", (selectedItem) => {
+      if (selectedItem.target.classList.contains("item-link")) {
+        let filterName = selectedItem.target.getAttribute("data-name");
+
+        filterImages.forEach((image) => {
+          let filterImage = image.getAttribute("data-name");
+          if (filterImage === filterName) {
+            image.style.display = "block";
+          } else {
+            image.style.display = "none";
+          }
+        });
+      }
+    });
+  });
+});
