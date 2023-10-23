@@ -571,6 +571,18 @@ main.row {
   .col .contens .box::before {
     left: -14px; /* Ubah posisi icon sebelum judul */
   }
+
+  .box p {
+    font-size: 14px; /* Responsive font size for 'p' element on mobile */
+  }
+
+  .box h3 {
+    font-size: 20px; /* Responsive font size for 'h3' element on mobile */
+  }
+
+  .box h4 {
+    font-size: 18px; /* Responsive font size for 'h4' element on mobile */
+  }
 }
 
 /* PROJECTS SECTION */
